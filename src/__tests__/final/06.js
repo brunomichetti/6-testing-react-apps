@@ -38,6 +38,7 @@ test('displays the users current location', async () => {
 
   expect(screen.getByLabelText(/loading/i)).toBeInTheDocument()
 
+  //necesita async por la promesa
   await act(async () => {
     resolve()
     await promise
